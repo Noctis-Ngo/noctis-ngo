@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harvey Ngo | 3D Artist</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #080808;
+            color: #e8e8e8;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 40px;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #999999;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 25px;
+        }
+
+        nav a {
+            color: #bbbbbb;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #e63939;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid #222222;
+            margin: 40px 0;
+        }
+
+        /* About */
+        .about {
+            max-width: 750px;
+            margin-bottom: 60px;
+        }
+
+        .about h2,
+        .gallery-title {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #999999;
+            font-size: 16px;
+        }
+
+        /* Artwork section */
+        .artwork {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .art-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease,
+                        border-color 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .art-card:hover {
+            transform: translateY(-5px);
+            border-color: #444444;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .art-card img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background-color: #000000;
+        }
+
+        .art-info {
+            padding: 20px;
+        }
+
+        .art-info h3 {
+            color: #ffffff;
+            font-size: 19px;
+            margin-bottom: 6px;
+        }
+
+        .art-info p {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 25px;
+            border-top: 1px solid #222222;
+            color: #555555;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            .artwork {
+                grid-template-columns: 1fr;
+            }
+
+            .art-card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Harvey Ngo</h1>
+
+            <p class="subtitle">3D Artist · Environment Artist · Handpainted Models</p>
+
+            <nav>
+                <a href="https://www.artstation.com/n0ctis" target="_blank">
+                    Artstation
+                </a>
+
+                <a href="https://www.instagram.com/noctis_da/" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="mailto:harveyngo2003@gmail.com">
+                    Email
+                </a>
+            </nav>
+
+        </header>
+
+
+        <hr>
+
+
+        <section class="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello, my name is Harvey Ngo and this is my portfolio.
+                I'm a 3D artist who loves creating handpainted models
+                and environments.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="gallery-title">Selected Work</h2>
+
+            <div class="artwork">
+
+                <!-- Sword Artwork -->
+
+                <div class="art-card">
+
+                    <img src="Sword1.jpg"
+                         width="600"
+                         height="350"
+                    alt="Handpainted 3D sword">
+
+                    <div class="art-info">
+
+                        <h3>Dark Fantasy Sword</h3>
+
+                        <p>
+                            Handpainted 3D weapon model
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Second Artwork -->
+
+                <div class="art-card">
+
+                    <div style="
+                        height: 350px;
+                        background: #181818;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #444;
+                    ">
+                        Artwork Coming Soon
+                    </div>
+
+                    <div class="art-info">
+
+                        <h3>Coming Soon</h3>
+
+                        <p>
+                            More 3D artwork will be added here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            © 2026 Harvey Ngo · 3D Artist
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
